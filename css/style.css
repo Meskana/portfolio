@@ -1,0 +1,417 @@
+body{
+	font-family: 'lucida Sans','lucida Sans Regular','lucida Grande','lucida sans Unicode', Geneva, Verdana,Sans-serif;
+	background-color:#090909;
+}
+
+#header{
+	background-color: #000000;
+}
+.logo h2{
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 7px 7px rgba(0, 0, 0, 0.3),
+	0px -4px 10px rgba(255,255,255, 0.3);
+}
+.collapse ul li a{
+	font-size: 1.2rem;
+	color: white;
+	text-transform: capitalize;
+	position: relative;
+	margin: auto;
+}
+.collapse ul li a:after{
+			content: ' ';
+			position: absolute;
+			background-color:red;
+			height: 2px;
+			width: 0%;
+			left: 0px;
+			bottom: -1px;
+			margin-bottom: 0.7rem;
+			transition: 0.31s;
+		}
+	.collapse ul li a:hover:after{
+	width: 100%;
+}
+.collapse ul li a:hover {
+	width: 100%;
+	color:red;
+}
+.nav-iten{
+	text-align: left;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+	background-color:#000000;
+	align-items: baseline;
+}
+.navbar-toggler-icon i{
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.btn{
+	background-color: red;
+	color: white;
+	border-radius: 2rem;
+	font-weight: bold;
+}
+
+/*.......this is where section 1 start.....*/
+
+.sec1{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding-top: 3rem;
+}
+.sec1-text{
+	width: 50%;
+	padding-right: 1rem;
+	padding-top: 4rem;
+}
+.sec1-text h1{
+	color: white;
+	font-weight: bold;
+	font-size: 4rem;
+}
+.sec1-text p{
+	color: pink;
+}
+.sec1-text form {
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.sec1-text form input{
+	display: inline-block;
+	width: 100%;
+	padding: 6px 12px;
+	outline: none;
+	border-radius: 20px;
+	border:2px solid red;
+}
+.sec1-text form button{
+	position: absolute;
+	display: inline-block;
+	border:none;
+	outline: none;
+	background-color: red;
+	border-radius: 20px;
+	color: white;
+	padding: 5px 10px;
+	box-shadow: inset 3px 3px 3px -1px rgba(0, 0, 0, 0.3),
+	inset -3px -3px 3px -1px rgba(255,255,255, 0.3);
+	right: 4px;
+	top: 3px;
+}
+.sec1-img{
+	width: 50%;
+padding-bottom: -3rem;
+}
+.sec1-img img{
+	height: 90%;
+	width: 100%;
+	border-radius: 8px;
+	object-fit: contain;
+	padding-bottom: -3rem;
+}
+@media (max-width: 800px){
+	.sec1{
+	flex-direction: column;
+	padding-bottom: 1rem;
+ }
+ .sec1-text{
+	width: 100%;
+	padding-bottom: 1rem;
+	padding-top:-2rem;
+	text-align: center;
+ }
+ .sec1-img{
+	width: 100%;
+ }
+}
+
+/*.......this is where section 2 start.....*/
+
+.section2{
+	background-color: #000000;
+}
+.section2 h1{
+	color: white;
+	font-weight: bold;
+	font-size: 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 3rem;
+}
+.sec2{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+.sec2-text{
+	width: 50%;
+	padding-right: 1rem;
+	
+}
+.sec2-text h2{
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: capitalize;
+	text-align: center;
+}
+.sec2-text p{
+	color: pink;
+	text-align: center;
+}
+.sec2-text form button{
+	border:none;
+	background-color: red;
+	border-radius: 30px;
+	color: white;
+	padding: 3px 25px;
+	box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.4),
+	-3px -3px 3px -1px rgba(255,255,255, 0.7);
+	margin-top: 1rem;
+	transition: 500ms;
+}
+.sec2-text form button:hover {
+	transform:scale(1.1);
+}
+.sec2-img{
+	width: 50%;
+}
+.sec2-img img{
+	width: 90%;
+	border-radius: 5px;
+	object-fit: cover;	
+}
+@media (max-width: 800px){
+	.sec2{
+	flex-direction: column;
+	padding-top: 3rem;
+}
+.sec2-img{
+	width: 90%;
+	margin: auto;
+}
+.sec2-text{
+	width: 100%;
+	padding-right: 1rem;
+	padding-top: 2rem;
+}
+.sec2-img img{
+	width: 100%;
+}
+}
+
+/*.......this is where section 3 start.....*/
+
+.section3{
+	background-image: linear-gradient(to bottom,#131313,#090909);
+}
+.sec3{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	gap: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.box{
+	width: 33%;
+	box-shadow:  3px 3px 3px -1px rgba(0, 0, 0, 0.3),
+	-3px -3px 3px -1px rgba(255,255,255, 0.3);
+	padding: 1rem;
+	text-align: center;
+	background-color: #202020;
+	border-radius: 5px;
+}
+.box h2{
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: capitalize;
+	text-align: center;
+}
+ .section3 h1{
+	color: white;
+	font-weight: bold;
+	font-size: 4rem;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 3rem;
+}
+.box p{
+	color: pink;
+}
+.box button{
+	border:none;
+	background-color: red;
+	border-radius: 30px;
+	color: white;
+	box-shadow:  3px 3px 3px -1px rgba(0, 0, 0, 0.3),
+	-3px -3px 3px -1px rgba(255,255,255, 0.3);
+	padding: 3px 25px;
+	margin-top: 1rem;
+	transition: 500ms;
+}
+.box button:hover {
+	transform:scale(1.1);
+}
+@media (max-width: 800px){
+	.section3 h1{
+	font-size: 3rem;
+}
+	.sec3{
+	width: 80%;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.box{
+	width: 100%;
+}
+h1{
+	font-size: 3rem;
+}
+.section2 h1{
+	font-size: 3rem;
+}
+.sec1-text h1{
+	font-size: 3rem;
+}
+}
+
+/*.......this is where section 4 start.....*/
+
+.section4{
+	background-color:#202020;
+	width: 100%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+.section4 h2{
+	color: white;
+	font-weight: bold;
+	padding-bottom: 1rem;
+	text-transform: capitalize;
+}
+.section4 button{
+	border:none;
+	background-color: red;
+	border-radius: 30px;
+	color: white;
+	padding: 3px 25px;
+	box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.4),
+	-3px -3px 3px -1px rgba(255,255,255, 0.7);
+	margin-top: 1rem;
+	transition: 500ms;
+}
+.section4 button:hover {
+	transform:scale(1.1);
+}
+@media(max-width: 800px){
+	.section4 h2{
+	padding-bottom: 0,8rem;
+}
+}
+
+/*.......this is where section footer start.....*/
+
+.footer{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-between;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	padding-bottom:1.5rem;
+}
+.ft h2{
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+.ft form {
+	width: 300px;
+	max-width: 100%;
+	position: relative;
+}
+.ft form input{
+	display: inline-block;
+	width: 100%;
+	padding: 12px 0px 0px 12px;
+	outline: none;
+	border: none;
+	border-bottom:2px solid red;
+	background-color: transparent;
+}
+.ft form button{
+	position: absolute;
+	display: inline-block;
+	border:1px solid white;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	padding: 3px 8px;
+	right: 4px;
+	top: -4px;
+}
+.ft form input[type="email"], email {
+	background-color: transparent;
+	color: white;
+}
+.ft ul{
+	list-style-type: none;
+	gap: 2rem;
+	padding-left: 0px;
+	margin: 0px;
+}
+.ft ul li a{
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: white;
+	text-transform: capitalize;
+	transition: 0.6s;
+}
+.ft ul li a:hover {
+	color: red;
+}
+.ft p{
+	color: white;
+}
+.ft2{
+	border-top: 1px solid white;
+	padding-top: 0.5rem;
+	padding-bottom:0.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+@media(max-width: 800px){
+	.footer{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 2rem;
+	
+}
+}
